@@ -1,0 +1,63 @@
+BEFORE DISABLE ALL ANTIVIRUS!!!
+1. Download the files from link above
+2. Unzip into desktop
+3. install creative cloud (from the rar or from official site doesn't matter)
+
+
+Creative cloud installation steps:
+
+1. Register and login
+2. DO NOT INSTALL "AGS" UNCHECK THIS IF POSSIBLE!! (ADOBE GENUINE SERVICE)
+3. AFTER INSTALLATION, DISABLE AUTO-UPDATE IN SETTINGS (APPS AND CREATIVE CLOUD PROGRAM)
+4. Exit creative cloud from task manager
+5. Go to default folder for adobe cloud (C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\AppsPanel)
+6. Create a folder inside it named "BACKUP" and move the following files (If you have them) to it: AppsPanel.pimx, AppsPanelBL.dll and AppsPanellL.dll
+
+Creative cloud steps done, this time you can go to next steps:
+1. go to this unzipped folder what u downloaded
+2. Go to : GenP 3.0 Release > Utilities > restore installation buttons [beta] 
+3. copy AppsPanelBL.dll and AppsPanellL.dll to C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\AppsPanel and paste this there
+4. Go again to unzipped folder, unzip "CCStopper.zip" and go inside the folder, run "CCStopper.bat" without Administrator option (if not work then with administrator)
+5. Click option 2 and enter, next way click option 1 and again enter, quit from app.
+6. Disable the firewall, otherwise you will not restart the Creative cloud application correctly
+7. Open creative cloud again
+8. Go to "APPS" and Done! you can install all apps now, beta too
+9. after installation, you can again enable your firewall, But the moment you re-enable creative cloud, you always have to disable the firewall
+
+
+Next steps (Additional):
+
+After installation of your apps, go again to the folder what u downloaded
+Then go to GenP 3.0 Release > Utilities > bypass unlicensed disablements > Patch.bat
+GenP 3.0 Release > Adobe GenP 3.0 > Runme.exe > "Search files", wait a while, check all, then click the pill
+
+----------------------------------------
+Disable Trial popup:
+
+1. Remove "Trial Expires in XX Days" Banner
+
+Edit (as admin) the file located in
+
+For Photoshop and others: Program Files\Common Files\Adobe\UXP\extensions\com.adobe.ccx.start\css\styles.css
+
+For Illustrator: Program Files\Adobe\Adobe Illustrator 20XX\Support Files\Required\UXP\extensions\com.adobe.ccx.start\css\styles.css
+
+For 4.3.0 search for {"background-color":"#1473E6"} replace with {"display":"none"}
+
+For 4.2.0 or below: search for {background-color:#1473E6} replace with {display:none}
+
+----------------------------
+
+2. Remove "Trial Ended" Banner
+
+Edit (as admin) the file located in
+
+For Photoshop and others: Program Files\Common Files\Adobe\UXP\extensions\com.adobe.ccx.start\css\styles.css
+
+After a certain update on Photoshop, the location of the "css" becomes the same path as Illustrator, but for Adobe Photoshop 20XX.
+
+For Illustrator: Program Files\Adobe\Adobe Illustrator 20XX\Support Files\Required\UXP\extensions\com.adobe.ccx.start\css\styles.css
+
+For 4.3.0 search for {"background-color":"#e34859"} replace with {"display":"none"}
+
+For 4.2.0 or below: search for {background-color:#e34859} replace with {display:none}
